@@ -1,0 +1,179 @@
+/* Tablet and below */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .header-container {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        display:flex;
+        /* flex-direction: column; */
+        padding: 10px 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 150px;
+        /* display: none; */
+        /* margin-bottom: 5px; */
+        padding: 14px 14px;
+        font-size: 14px;
+        white-space: nowrap;  
+        text-align: center;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .header-cta {
+        display: none;
+    }
+    
+    .hero {
+        height: 70vh;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 576px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px;
+        padding: 14px 14px;
+        font-size: 13px;
+        white-space: nowrap;   /* ← Keeps text on one line */
+        text-align: center;
+    }
+    
+    .register-card {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .trust-badges {
+        gap: 15px;
+    }
+    
+    .badge img {
+        width: 120px;
+    }
+}
+
+
+
+/* Small Mobile */
+
+/* @media (max-width: 576px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .register-card {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .trust-badges {
+        gap: 15px;
+    }
+    
+    .badge img {
+        width: 120px;
+    }
+} */
